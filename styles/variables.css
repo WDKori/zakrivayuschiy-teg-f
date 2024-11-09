@@ -21,4 +21,6 @@
     ),
     repeating-linear-gradient(#d3d3d3 0px 2px, transparent 2px 4px),
     linear-gradient(#e7e7e7 0.01%, #1a1a1a);
+  --heart-main: #000;
+  --heart-accent: rgba(255, 0, 0, 1);
 }
