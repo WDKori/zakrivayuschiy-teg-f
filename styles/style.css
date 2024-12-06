@@ -71,7 +71,7 @@
   position: relative;
   padding: 0;
   text-transform: uppercase;
-  transition: all 0.3s;
+
   font-family: var(--accent-font);
   line-height: 14px;
 }
@@ -83,7 +83,6 @@
   top: 16px;
   width: 0;
   height: 2px;
-  transition: all 0.3s;
   background-color: var(--accent-color);
 }
 
@@ -100,6 +99,7 @@
 .theme-menu__button:disabled {
   color: var(--accent-color);
   pointer-events: none;
+  transition: color 0.3s ease;
 }
 
 .theme-menu__button:disabled::before {
@@ -121,6 +121,7 @@
 .theme-menu__button:hover {
   color: var(--accent-color);
   cursor: pointer;
+  transition: color 0.3s ease;
 }
 
 .card__list-item {
@@ -190,7 +191,6 @@
   justify-self: end;
   margin: 25px 25px 25px 0;
   gap: 6px;
-  transition: all 1s ease;
 }
 .card__icon-button {
   height: 38px;
@@ -232,35 +232,35 @@
 .card__icon-button:active .main-body {
   fill: var(--heart-accent);
   opacity: 1;
-  transition: all 0.3s 0.05s ease;
+  transition: opacity 0.3s 0.05s ease;
 }
 
 .card__icon-button:active .core {
   fill: var(--heart-accent);
   opacity: 1;
-  transition: all 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 
 .card__icon-button:focus-visible {
   outline: none;
   border-color: var(--main-color);
-  transition: all 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 
 .like-icon.is-liked .core {
   fill: var(--heart-accent);
   opacity: 1;
-  transition: all 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 .like-icon.is-liked .main-body {
   fill: var(--heart-accent);
   opacity: 1;
-  transition: all 0.3s 0.05s ease;
+  transition: opacity 0.3s 0.05s ease;
 }
 .like-icon.is-liked .contour {
   fill: var(--heart-accent);
   opacity: 1;
-  transition: all 0.3s 0.06s ease;
+  transition: opacity 0.3s 0.06s ease;
 }
 
 .like-icon.is-liked .heart {
@@ -313,11 +313,8 @@
   height: 100%;
   background-color: var(--main-color);
   transform: translateX(-100%);
-  transition: all 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
   z-index: 0;
-}
-
-.main__button:hover {
 }
 
 .main__button:hover::before {
@@ -327,7 +324,7 @@
 .main__button:focus-visible {
   outline: none;
   box-shadow: 2px 2px var(--main-color);
-  transition: all 0.3s;
+  transition: box-shadow 0.3s ease;
 }
 
 .button__text {
@@ -336,7 +333,6 @@
   line-height: 12.6px;
   font-family: var(--accent-font);
   font-weight: var(--main-font-weight);
-  transition: all 0.3s;
   color: var(--main-backgrond-color);
   mix-blend-mode: difference;
   z-index: 1;
@@ -345,8 +341,6 @@
 .card__button-text {
   display: inline-block;
   padding: 12.5px 0;
-
-  transition: all 0.3s;
 }
 
 .filter__grayscale {
