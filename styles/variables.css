@@ -23,4 +23,5 @@
     linear-gradient(#e7e7e7 0.01%, #1a1a1a);
   --heart-main: #000;
   --heart-accent: rgba(255, 0, 0, 1);
+  --label-shadow: rgba(255, 255, 255, 1);
 }
