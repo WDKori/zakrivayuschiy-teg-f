@@ -194,9 +194,6 @@
   justify-content: center;
 }
 
-.like-icon {
-}
-
 .heart {
   animation-name: heart;
 }
@@ -353,7 +350,7 @@
 
 .footer__button {
   margin: auto;
-  padding: 9.5px 14.5px;
+  padding: 13px 18px;
   display: flex;
   flex-direction: row;
   gap: 8px;
@@ -364,8 +361,8 @@
 
 .footer__icon {
   position: relative;
-  width: 28px;
-  height: 28px;
+  width: 21px;
+  height: 21px;
   z-index: 1;
   color: var(--main-backgrond-color);
   mix-blend-mode: difference;
@@ -427,6 +424,11 @@ dialog::backdrop {
   .footer__button {
     flex-direction: column;
     padding: 15px 20px;
+  }
+
+  .footer__icon {
+    width: 28px;
+    height: 28px;
   }
 
   dialog {
