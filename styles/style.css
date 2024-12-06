@@ -351,12 +351,8 @@
   filter: hue-rotate(-90deg);
 }
 
-.footer {
-  display: flex;
-  justify-content: center;
-}
-
 .footer__button {
+  margin: auto;
   padding: 9.5px 14.5px;
   display: flex;
   flex-direction: row;

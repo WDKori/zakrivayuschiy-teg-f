@@ -52,9 +52,9 @@
       <section class="cards">
         <ul class="card__list">
           <li class="card__list-item">
-            <h3 class="card__list-item-title">
+            <h2 class="card__list-item-title">
               Фритрек и нулевой спринт: Подготовка к работе
-            </h3>
+            </h2>
             <article class="card__list-item-photo">
               <picture class="card__list-item-picture">
                 <img src="./images/image.png" alt="машинка" />
@@ -110,7 +110,7 @@
             </div>
           </li>
           <li class="card__list-item">
-            <h3 class="card__list-item-title">1 спринт: Я — чистый лист</h3>
+            <h2 class="card__list-item-title">1 спринт: Я — чистый лист</h2>
             <article class="card__list-item-photo">
               <picture class="card__list-item-picture">
                 <img
@@ -172,9 +172,9 @@
             </div>
           </li>
           <li class="card__list-item">
-            <h3 class="card__list-item-title">
+            <h2 class="card__list-item-title">
               1 спринт: А если не получится?
-            </h3>
+            </h2>
             <article class="card__list-item-photo">
               <picture class="card__list-item-picture">
                 <img
@@ -234,7 +234,7 @@
             </div>
           </li>
           <li class="card__list-item">
-            <h3 class="card__list-item-title">2 спринт: Погоня за идеалом</h3>
+            <h2 class="card__list-item-title">2 спринт: Погоня за идеалом</h2>
             <article class="card__list-item-photo">
               <picture class="card__list-item-picture">
                 <img
@@ -296,7 +296,7 @@
             </div>
           </li>
           <li class="card__list-item">
-            <h3 class="card__list-item-title">2 спринт: О тех, кто рядом</h3>
+            <h2 class="card__list-item-title">2 спринт: О тех, кто рядом</h2>
             <article class="card__list-item-photo">
               <picture class="card__list-item-picture">
                 <img
@@ -359,7 +359,7 @@
             </div>
           </li>
           <li class="card__list-item">
-            <h3 class="card__list-item-title">3 спринт: Обходные стратегии</h3>
+            <h2 class="card__list-item-title">3 спринт: Обходные стратегии</h2>
             <article class="card__list-item-photo">
               <picture class="card__list-item-picture">
                 <img
@@ -419,9 +419,9 @@
             </div>
           </li>
           <li class="card__list-item">
-            <h3 class="card__list-item-title">
+            <h2 class="card__list-item-title">
               3 спринт: Когда опускаются руки
-            </h3>
+            </h2>
             <article class="card__list-item-photo">
               <picture class="card__list-item-picture">
                 <img
@@ -484,7 +484,7 @@
             </div>
           </li>
           <li class="card__list-item">
-            <h3 class="card__list-item-title">«Сейчас я здесь»</h3>
+            <h2 class="card__list-item-title">«Сейчас я здесь»</h2>
             <article class="card__list-item-photo">
               <picture class="card__list-item-picture">
                 <img
@@ -547,38 +547,38 @@
             </div>
           </li>
         </ul>
+
+        <button
+          class="footer__button main__button"
+          type="button"
+          onclick="window['dialog-id'].showModal()"
+        >
+          <svg class="footer__icon" viewBox="0 0 40 40">
+            <use href="./svg/floppy .svg#floppy" />
+          </svg>
+          <span class="footer__button-text button__text"
+            >Сохранить на память</span
+          >
+        </button>
+        <dialog id="dialog-id">
+          <svg class="modal__icon" viewBox="0 0 40 40">
+            <use href="./svg/floppy .svg#floppy" />
+          </svg>
+          <div class="modal__text">
+            <p>Вставьте</p>
+            <p>дискету, чтобы продолжить</p>
+          </div>
+
+          <button
+            class="main__button modal__button"
+            type="button"
+            onclick="window['dialog-id'].close()"
+          >
+            <span class="modal__button-text">ок</span>
+          </button>
+        </dialog>
       </section>
     </main>
-    <footer class="footer">
-      <button
-        class="footer__button main__button"
-        type="button"
-        onclick="window['dialog-id'].showModal()"
-      >
-        <svg class="footer__icon" viewBox="0 0 40 40">
-          <use href="./svg/floppy .svg#floppy" />
-        </svg>
-        <span class="footer__button-text button__text"
-          >Сохранить на память</span
-        >
-      </button>
-      <dialog id="dialog-id">
-        <svg class="modal__icon" viewBox="0 0 40 40">
-          <use href="./svg/floppy .svg#floppy" />
-        </svg>
-        <span class="modal__text"
-          >Вставьте <br />
-          дискету, чтобы продолжить</span
-        >
-        <button
-          class="main__button modal__button"
-          type="button"
-          onclick="window['dialog-id'].close()"
-        >
-          <span class="modal__button-text">ок</span>
-        </button>
-      </dialog>
-    </footer>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
